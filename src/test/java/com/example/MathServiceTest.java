@@ -61,5 +61,6 @@ class MathServiceTest {
 
         // Verificar que la excepción es lanzada al intentar dividir por cero
         assertThrows(ArithmeticException.class, () -> mathService.divideNumbers(10, 0));
+
     }
 }
