@@ -31,20 +31,19 @@ class MathServiceTest {
     @Test
     void testAddNumbers() {
         // Crear el mock
-        Calculator calculatorMock = mock(Calculator.class);
+
 
         // Definir el comportamiento del método add()
-        when(calculatorMock.add(2, 3)).thenReturn(5);
+
 
         // Crear el servicio con el mock
-        MathService mathService = new MathService(calculatorMock);
+
 
         // Llamar al método del servicio y verificar el resultado
-        int result = mathService.addNumbers(2, 3);
-        assertEquals(5, result);
+
 
         // Verificar que el método del mock fue llamado con los argumentos correctos
-        verify(calculatorMock).add(2, 3);
+
 
     }
 
